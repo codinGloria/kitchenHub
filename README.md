@@ -5,9 +5,11 @@ O Kitchen Hub é um projeto criado para facilitar o gerenciamento de restaurante
 
 ## 📂 Estrutura do Projeto
 
-Será dividido em duas aplicações principais:
+Será dividido em duas aplicações principais, e em ambas devemos:
+- Criar tabelas no banco de dados automaticamente ao rodar a aplicação (caso não existam).
+- Conectar ao banco de dados PostgreSQL em um container Docker.
 
-### 1) restaurant-management-service
+### 1) *restaurant-management-service*
 Responsável pelo gerenciamento de restaurantes e seus recursos associados.
 
 #### Entidades e Funcionalidades:
@@ -16,13 +18,9 @@ Responsável pelo gerenciamento de restaurantes e seus recursos associados.
 - **Cardápio**: CRUD para os cardápios disponíveis em cada restaurante.
 - **Prato**: CRUD para os pratos do cardápio.
 
-#### Requisitos:
-- Criar tabelas no banco de dados automaticamente ao rodar a aplicação (caso não existam).
-- Conectar ao banco de dados PostgreSQL em um container Docker.
-
 ---
 
-### 2. **order-management-service**
+### 2) *order-management-service*
 Responsável pelo gerenciamento de pedidos realizados pelos clientes.
 
 #### Entidades e Funcionalidades:
@@ -31,9 +29,20 @@ Responsável pelo gerenciamento de pedidos realizados pelos clientes.
 - Item: CRUD para itens do pedido.
 
 #### Requisitos:
-- Criar tabelas no banco de dados automaticamente ao rodar a aplicação (caso não existam).
 - Comunicar-se com o serviço **restaurant-management-service** através de uma API REST:
   - Requisição `GET` para buscar o objeto `Cardápio`, contendo os pratos relacionados.
+
+## 📊 Modelo de Entidades
+[imagem a ser adicionada]
+
+## ⚙️ Como Executar o Projeto
+[adicionar após criar o projeto]
+  
+## 📬 Comunicação entre Serviços
+No order-management-service, um cliente HTTP acessará o endpoint do restaurant-management-service para obter informações de cardápios e pratos.
+
+- Endpoints:
+    - `GET ...`: Retorna o cardápio com seus pratos relacionados.
 
 ## 🛠️ Tecnologias Utilizadas
 - Backend: 
@@ -46,18 +55,6 @@ Responsável pelo gerenciamento de pedidos realizados pelos clientes.
   - Docker
 - Integração:
   - REST APIs (Comunicação entre microsserviços)
-
-## ⚙️ Como Executar o Projeto
-[adicionar após criar o projeto]
-  
-## 📊 Modelo de Entidades
-[imagem a ser adicionada]
- 
-## 📬 Comunicação entre Serviços
-No order-management-service, um cliente HTTP acessará o endpoint do restaurant-management-service para obter informações de cardápios e pratos.
-
-- Endpoints:
-    - `GET ...`: Retorna o cardápio com seus pratos relacionados.
 
 ## 🚀 Funcionalidades a serem adicionadas
 - Testar a persistência de dados no Docker após reinicialização.
