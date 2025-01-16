@@ -33,7 +33,7 @@ Responsável pelo gerenciamento de pedidos realizados pelos clientes.
   - Requisição `GET` para buscar o objeto `Cardápio`, contendo os pratos relacionados.
 
 ## 📊 Modelo de Entidades
-![image](https://github.com/user-attachments/assets/1a74698c-2ef8-4383-8529-d25f36ecb170)
+![image](https://github.com/user-attachments/assets/06a3a68f-baf4-4674-97d2-6b22ceda1919)
 
 
 ## ⚙️ Como Executar o Projeto
