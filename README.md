@@ -1,3 +1,5 @@
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=FF0000&height=120&section=header"/>
+
 <h1 align="center"> Projeto: Kitchen Hub 🍕 </h1>
 <br>
 
@@ -71,3 +73,5 @@ Para mais informações ou dúvidas sobre o projeto, entre em contato:
 <br><br>
 <a href="https://www.linkedin.com/in/codingloria/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
 </div>
+  
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=FF0000&height=120&section=footer"/>
